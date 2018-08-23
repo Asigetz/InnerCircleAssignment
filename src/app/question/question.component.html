@@ -1,0 +1,12 @@
+<div layout="column" layout-align="space-between start">
+  <tr>
+    <th> <span class="headers">Choose question type:</span></th>
+    <th> <span class="headers">Enter Question title:</span></th>
+  </tr>
+  <tr>
+    <td> <div><select class="dropdown-content" [(ngModel)]="selectedQuestion.questionType" (select)="onSelect()" id="category">
+      <option class="dropDownQuestion"*ngFor="let item of questions" [value]="item">{{item}}</option> </select></div></td>
+    <td><div class="headers"><input class="questionTitle" [(ngModel)]="selectedQuestion.title"></div></td>
+  </tr>
+  <tr> <div> <app-content [questionType]="selectedQuestion.questionType" (talk)="talkBack($event)"></app-content></div></tr>
+</div>

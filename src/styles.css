@@ -1,1 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~font-awesome/css/font-awesome.css';
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: sans-serif !important;
+}
+body {
+  line-height: 1.75em;
+  font-size: 16px;
+  background-color: #222;
+  color: #e7e7e7;
+}
+.titleText{
+  left: 40%;
+  position: relative;
+}
+
